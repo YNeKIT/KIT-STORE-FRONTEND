@@ -11,7 +11,7 @@ import {
 class StoreService {
 	async getAll() {
 		const { data } = await axiosWithAuth<IStore[]>({
-			url: API_URL.stores(),
+			url: API_URL.stores(''),
 			method: 'GET'
 		})
 		return data
